@@ -50,17 +50,14 @@ a:active {
 /* home.html */
 .icon {
    width: 256px;
-   float: left;
-   margin: 5px;
+   letter-spacing: 0.25rem;
 }
 .icon img {
-   height: 256px;
-   width: 256px;
    filter: grayscale(100%);
+   transition: filter 0.3s ease; 
 }
-
-.icon p {
-	text-align: center;
+.icon img:hover {
+   filter: grayscale(0%);
 }
 
 /* signal.html */
