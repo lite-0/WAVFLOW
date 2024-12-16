@@ -16,7 +16,7 @@ h1 {
 h2 {
 	font-size: 11.089rem;
 }
-h3 {
+h3{ 
 	font-size: 6.854rem;
 }
 h4 {
@@ -28,8 +28,7 @@ h5 {
 h6 {
 	font-size: 1.618rem;
 }
-footer small,
-footer a {
+footer small, footer a {
 	font-size: 0.618rem;
 }
 /* FORMATTING */
@@ -79,35 +78,13 @@ a:hover,
 a:active {
 	text-decoration: underline;
 }
-/* CONTENT DISPLAY */
-.icon,
-.gallery li {
+/* home.html, wav.html, prob more */
+.banner li, .icon {
 	margin: 10px 5px;
 	letter-spacing: 0.75px;
 	position: relative;
 	overflow: hidden;
 	border-radius: 7.5px;
-}
-
-.gallery li img,
-.icon img {
-	width: 100%;
-	height: 100%;
-	display: block;
-}
-.gallery li p {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	padding: 5px;
-	background-color: rgba(0, 0, 0, 0.5);
-	overflow: hidden;
-	border-radius: 0 0 7.5px 7.5px;
-	font-size: 0.75rem;
-}
-.gallery li {
-	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-	display: block;
 }
 /* home.html */
 .icon {
@@ -115,20 +92,29 @@ a:active {
 	max-width: 256px;
 	transition: box-shadow 0.3s ease;
 }
+.icon:hover {
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 .icon img {
 	border-radius: 7.5px;
 	filter: grayscale(100%);
 	transition: filter 0.3s ease;
+	display: block;
 }
-.icon:hover {
-	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-.icon:hover img {
+.icon:hover img  {
 	filter: grayscale(0%);
 	border-radius: 7.5px;
 }
-.icon p,
-.icon p:hover {
+.icon p {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 5px;
+	background-color: rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+	border-radius: 0 0 7.5px 7.5px;
+}
+.icon p:hover{
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -138,43 +124,63 @@ a:active {
 	border-radius: 0 0 7.5px 7.5px;
 }
 /* wav.html */
-#musicGallery .gallery li,
-#entertainmentGallery .gallery li {
+.banner li {
 	float: left;
+	width: 100%;
+	height: 100%;
 	max-width: 170px;
 	max-height: 250px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	display: block;
 }
-#musicGallery,
-#entertainmentGallery,
-#signalGallery {
+.banner li p {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 5px;
+	background-color: rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+	border-radius: 0 0 7.5px 7.5px;
+	font-size: 0.75rem;
+} 
+#musicGallery, #entertainmentGallery {
 	clear: both;
 	display: inline-block;
 	max-width: 100%;
 }
-#entertainmentGallery,
-#signalGallery {
+#entertainmentGallery {
 	margin-top: 20px;
 }
-#musicGallery h6,
-#entertainmentGallery h6 {
-	margin-left: 5px;
+#musicGallery h6, #entertainmentGallery h6 {
 	text-align: left;
+	margin-left: 7px;
 }
 
-/* signal.html */
+/* signal.html */ 
 #SIGNAL img {
 	border-radius: 7.5px;
-	max-width: 100%;
+	max-width: 75%;
 }
-#SIGNAL h6,
-#SIGNAL p {
-	margin: 3px;
-	padding: 2px;
-	text-align: left;
+#signalSeason {
+	margin: 10px 5px;
+	letter-spacing: 0.75px;
+	position: relative;
+	overflow: hidden;
+	border-radius: 7.5px;
 }
-#signalGallery .gallery li {
-	clear: both;
-	display: inline-block;
-	max-width: 250px;
-	max-height: 170px;
+
+#signalSeason li {
+	float: left;
+	max-width: 25%;
+	display: block;
 }
+#signalSeason li p {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 5px;
+	background-color: rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+	border-radius: 0 0 7.5px 7.5px;
+	font-size: 0.75rem;
+} 
