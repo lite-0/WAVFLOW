@@ -10,6 +10,9 @@
 html {
 	font-size: 14px;
 }
+p {
+	font-size: 1rem;
+}
 h1 {
 	font-size: 17.942rem;
 }
@@ -34,24 +37,17 @@ footer a {
 }
 /* FORMATTING */
 header {
-	margin: 20px 0px 10px 0px;
+	margin: 15px 0px;
 }
 #logo {
 	max-width: 400px;
 }
-#home {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-}
 body {
+	min-height: 110vh;
 	font-size: 1rem;
 	margin: auto;
 	max-width: 900px;
-	height: 100vh;
-	background: linear-gradient(45deg, #8ebdd1, #bfbfbf, #43c4ff);
+	background: linear-gradient(45deg, #6d96a8, #9b9b9b, #3192cc);
 	background-size: 300% 300%;
 	animation: color 12s ease-in-out infinite;
 }
@@ -88,7 +84,6 @@ a:active {
 	overflow: hidden;
 	border-radius: 7.5px;
 }
-
 .gallery li img,
 .icon img {
 	width: 100%;
@@ -110,6 +105,14 @@ a:active {
 	display: block;
 }
 /* home.html */
+.homepage {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
 .icon {
 	display: inline-block;
 	max-width: 256px;
