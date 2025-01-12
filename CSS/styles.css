@@ -140,32 +140,26 @@ a:active {
 	overflow: hidden;
 	border-radius: 0 0 7.5px 7.5px;
 }
-#musicGallery .gallery li,
-#entertainmentGallery .gallery li {
+.contentPortrait .gallery li {
 	float: left;
 	max-width: 170px;
 	max-height: 250px;
 }
-#musicGallery,
-#entertainmentGallery,
-#signalGallery,
-#badgeWarGallery {
+.contentPortrait,
+.contentLandscape {
 	clear: both;
 	display: inline-block;
 	max-width: 100%;
 }
-#entertainmentGallery,
-#signalGallery,
-#badgeWarGallery {
+.contentPortrait,
+.contentLandscape {
 	margin-top: 20px;
 }
-#musicGallery h6,
-#entertainmentGallery h6 {
+.contentPortrait h6 {
 	margin-left: 5px;
 	text-align: left;
 }
-#signalGallery .gallery li,
-#badgeWarGallery .gallery li {
+.contentLandscape .gallery li {
 	clear: both;
 	display: inline-block;
 	max-width: 250px;
