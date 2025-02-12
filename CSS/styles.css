@@ -1,12 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
 * {
 	margin: 0;
 	padding: 0;
 	width: 100%;
 	box-sizing: border-box;
-	font-family: "Trebuchet MS", sans-serif;
+	font-family: 'Poppins', sans-serif;
 	color: #ffffff;
 	text-align: center;
 }
+
 html {
 	font-size: 14px;
 }
@@ -67,14 +70,6 @@ footer {
 	letter-spacing: 0.125rem;
 	margin: 5px;
 }
-a:link,
-a:visited {
-	text-decoration: none;
-}
-a:hover,
-a:active {
-	text-decoration: underline;
-}
 /* CONTENT DISPLAY */
 .icon,
 .gallery li {
@@ -106,7 +101,7 @@ a:active {
 }
 /* home.html */
 .homepage {
-	min-height: 100vh;
+	min-height: 90vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -162,8 +157,10 @@ a:active {
 .contentLandscape .gallery li {
 	clear: both;
 	display: inline-block;
-	max-width: 250px;
-	max-height: 150px;
+	width: 250px;
+	height: 150px;
+	max-height: 100%;
+	max-width: 100%;
 }
 .landscapeBanner img {
 	border-radius: 7.5px;
@@ -176,4 +173,42 @@ a:active {
 	margin: 3px;
 	padding: 2px;
 	text-align: left;
+}
+
+.card {
+	margin-top: 20px;
+}
+
+.profiles { 
+	background: rgba(0, 0, 0, 0.25);
+	border-radius: 10px;
+	padding: 5px;
+}
+
+.profiles p {
+	padding: 2px
+}
+
+.COSMO {
+	margin-top: 10px;
+}
+
+hr.rounded {
+	border-top: 2px solid #ffffff;
+	border-radius: 5px;
+	margin: 5px 0px;
+}
+
+.toggle-group {
+	display: none;
+  }
+  .toggle-group.active {
+	display: block;
+  }
+
+
+.profileImage img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
 }
